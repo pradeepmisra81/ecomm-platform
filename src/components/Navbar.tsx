@@ -1,8 +1,8 @@
 import Menu from './Menu';
 import Link from 'next/link';
 import Image from 'next/image';
-import Searchbar from './Searchbar';
-import Navicon from './Navicon';
+import SearchBar from './SearchBar';
+import NavIcons from './NavIcons';
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className='h-full flex items-center justify-between md:hidden'>
         {/* MOBILE */}
         <Link href="/">
-          <div className='text-2xl tracking-wide'>LWP</div>
+          <div className='text-2xl tracking-wide'>SNDM Ayurveda</div>
         </Link>
         <Menu />
       </div>
@@ -21,17 +21,17 @@ const Navbar = () => {
         <div className='w-1/3'>
           <Link href="/">
             <Image 
-            src="/logo.png" 
+            src="/Logo.png" 
             alt="" 
             width={28} 
             height={28}/>
-          <div className='text-2xl tracking-wide'>LWP</div>
+          <div className='text-2xl tracking-wide'>SNDM Ayurveda</div>
           </Link>
         </div>
         {/* RIGHT */}
         <div className='w-2/3'>
-          <Searchbar/>
-          <Navicon/>
+          <SearchBar/>
+          <NavIcons/>
         </div>
       </div>
 

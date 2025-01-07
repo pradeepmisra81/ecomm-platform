@@ -1,9 +1,9 @@
 'use client'
 
-const Searchbar = () => {
+const SearchBar = () => {
   return (
     <div>Searchbar</div>
   )
 }
 
-export default Searchbar;
+export default SearchBar;
