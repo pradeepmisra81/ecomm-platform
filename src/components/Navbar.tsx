@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className='hidden md:flex items-center justify-between gap-8 h-full'>
         {/* LEFT  */}
         <div className='w-1/3'>
-          <Link href="/">
+          <Link href="/" className='flex items-center gap-3'>
             <Image 
             src="/Logo.png" 
             alt="" 
@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
         </div>
         {/* RIGHT */}
-        <div className='w-2/3'>
+        <div className='w-2/3 flex items-center justify-between gap-8'>
           <SearchBar/>
           <NavIcons/>
         </div>
